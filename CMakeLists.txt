@@ -31,17 +31,13 @@ include(Common)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -w")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-error")
 
-
-common_find_package( pompeii REQUIRED SYSTEM )
-
-list( APPEND POMPEIIDEMOS_DEPENDENT_LIBRARIES pompeii )
-
 IF (NOT WIN32)
   link_libraries( -lX11 -lXi -lXrandr -lXxf86vm -lXinerama -lXcursor -lrt -lm -pthread )
 endif()
 
 common_find_package_post( )
 
+#add_subdirectory( pompeii )
 add_subdirectory( demos )
 
 configure_file(

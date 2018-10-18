@@ -459,7 +459,7 @@ int main( )
 
     void main( ) 
     {
-      outFragColor = vec4( vec3( 1.0 ) - inColor, 1.0 );
+      outFragColor = vec4( inColor, 1.0 );
     } )", frg_spv );
       
 

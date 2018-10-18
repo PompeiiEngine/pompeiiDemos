@@ -5,6 +5,8 @@ glsl2spv( )
 include_directories(
   ${PROJECT_BINARY_DIR}/include
   ${PROJECT_SOURCE_DIR}
+  ${PROJECT_SOURCE_DIR}/pompeii
+  #${VULKAN_INCLUDE_DIR}
   ${CMAKE_CURRENT_BINARY_DIR}
 )
 

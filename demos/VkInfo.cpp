@@ -132,6 +132,8 @@ int main( void )
   {
     std::cout << "System Error: " << err.what( ) << std::endl;
   }
+#ifdef WIN32
   system( "PAUSE" );
+#endif
   return 0;
 }
