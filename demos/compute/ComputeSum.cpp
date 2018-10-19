@@ -216,7 +216,9 @@ int main( void )
   std::cout << "..., " << result[ bufferElements - 1 ] << std::endl;
   std::cout << std::endl;
 
+#ifdef WIN32
   system( "PAUSE" );
+#endif
 
   return 0;
 }
